@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>MineField!</title>
+    <style>
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+  
+        .boxes-container {
+          width: 500px;
+        }
+  
+        .box {
+          width: 50px;
+          height: 50px;
+          background-color: grey;
+          border: 1px solid rgb(212, 212, 212);
+        }
+        .water-box {
+          background-color: aqua;
+        }
+  
+        .start-box {
+          background-color: red;
+        }
+        .end-box {
+          background-color: green;
+        }
+      </style>
+</head>
+<body>
+    <div class="game-container flex flex-col justify-center items-center">
+        <h1 class="game-message">Message</h1>
+        <div class="boxes-container flex flex-wrap"></div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
